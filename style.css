@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Indie+Flower&display=swap');
 
 * {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
 
@@ -19,7 +19,6 @@ img{
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
 
 .signup{
@@ -27,6 +26,7 @@ img{
 }
 
 .inform p{
+    font-family: 'Indie Flower', cursive;
     font-size: 1.5rem;
     margin: 15px;
 }
@@ -40,16 +40,13 @@ img{
 .first-column, .second-column{
     display: flex;
     flex-direction: column;
-    
 }
 
 label{
     font-size: 1.3rem;
-    font-family: 'Inconsolata', monospace;
 }
 input{
     width: 20vw;
-    font-family: 'Inconsolata', monospace;
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -57,7 +54,15 @@ input{
 
 .error{
     color: red;
-    font-family: 'Inconsolata', monospace;
+}
+
+span{
+    color: rgba(0,125,254,255);
+    cursor: pointer;
+}
+
+.login{
+    margin-top: 8px;
 }
 
 form{
@@ -73,10 +78,12 @@ form{
     justify-content: space-evenly;
 }
 
+.submit-section{
+    margin-left: 50px;
+}
+
 input[type="submit"]{
     margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
     width: 180px;
     padding: 5px;
     background-color: rgba(0,125,254,255);
@@ -102,9 +109,8 @@ input[type="submit"]:hover{
     input{
         width: 50vw;
     }
-    input[type="submit"]{
-        text-align: center;
-        margin-top: 10px;
-        margin-left: 10px;
+    .submit-section{
+        margin: 0 auto;
+        margin-bottom: 5px;
     }
   }
