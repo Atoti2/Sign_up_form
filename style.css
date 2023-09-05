@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    display: flex;
+    min-height: 100vh;
+}
+.holder{
+    display: flex;
+    min-height: 100vh;
+}
+img{
+    background-image: url(https://images.unsplash.com/photo-1692120424000-73dad4ed7a7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.signup{
+    min-width: 60vw;
+}
+
+.inform p{
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.register{
+    margin-top: 50px;
+}
+
+.first-column, .second-column{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label{
+    font-size: 1.3rem;
+}
+input{
+    width: 20vw;
+}
+
+form{
+    box-shadow: 3px 16px 16px -3px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 3px 16px 16px -3px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 16px 16px -3px rgba(0,0,0,0.46);
+    padding: 12px;
+    background-color: moccasin;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    justify-content: space-evenly;
+}
+
+input[type="submit"]{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 180px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    form, main{
+        flex-direction: column;
+    }
+    input{
+        width: 50vw;
+    }
+  }
