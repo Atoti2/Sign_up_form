@@ -23,35 +23,38 @@
             <section class="register">
                 <form id="my-form">
                     <div class="first-column">
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text" name="firstname" id="firstname">
+                        <label for="firstname">*FIRST NAME</label>
+                        <input type="text" name="firstname" required id="firstname" placeholder="John">
 
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="John123@gmail.com">
 
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label for="password">*PASSWORD</label>
+                        <input type="password" name="password" required id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                        <p class="error"></p>
                     </div>
                     <div class="second-column">
-                        <label for="firstname">LAST NAME</label>
-                        <input type="text" name="firstname" id="firstname">
+                        <label for="lastname">*LAST NAME</label>
+                        <input type="text" name="lastname" required id="lastname" placeholder="Smith">
 
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="text" name="phone" id="phone">
+                        <input type="text" name="phone" id="phone" placeholder="+3630833678">
 
-                        <label for="conf_pass">CONFIRM PASSWORD</label>
-                        <input type="password" name="conf_pass" id="conf_pass">
+                        <label for="conf_pass">*CONFIRM PASSWORD</label>
+                        <input type="password" name="conf_pass" required id="conf_pass" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
 
                     </div>
                  
                 </form>
                 <div class="submit-section">
-                    <input type="submit" value="Create account" form="my-form">
+                    <input type="submit" value="Create account" form="my-form" id="check">
                 </div>
              
             </section>
        
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
